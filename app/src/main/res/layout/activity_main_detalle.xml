@@ -66,6 +66,7 @@
         android:layout_marginRight="55dp"
         android:layout_marginBottom="18dp"
         android:background="@color/colorPrimaryDark"
+        android:onClick="Modificar"
         android:text="@string/btn_edit"
         android:textColor="#FFFFFF"
         android:textSize="18sp"

@@ -10,6 +10,7 @@
     <string name="titulo_registro">Registro de citas</string>
     <string name="titulo_rconsultas">Relación de citas</string>
     <string name="titulo_detalle">Detalle de cita</string>
+    <string name="titulo_edit">Modificar cita</string>
     <string name="hora_cita">Selecciona Hora</string>
     <string name="fecha_cita">Selecciona Fecha</string>
 </resources>

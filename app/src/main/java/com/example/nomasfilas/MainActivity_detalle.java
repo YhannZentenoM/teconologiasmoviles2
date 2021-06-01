@@ -51,4 +51,13 @@ public class MainActivity_detalle extends AppCompatActivity {
             Toast.makeText(this, "Debes introducir el código del artículo",
                     Toast.LENGTH_SHORT).show(); }
     }
+
+    public void Modificar(View view){
+        consul = getIntent().getStringExtra("data_consul");
+        fecha = getIntent().getStringExtra("data_fecha");
+        Intent intent = new Intent(MainActivity_detalle.this, MainActivity_modificar.class);
+        intent.putExtra("data_consul", consul);
+        intent.putExtra("data_fecha", fecha);
+        startActivity(intent);
+    }
 }
