@@ -4,9 +4,12 @@
     <string name="btn_ingresar">Ingresar</string>
     <string name="btn_agregar">Agregar</string>
     <string name="btn_citas">Ver Citas</string>
+    <string name="btn_delete">Eliminar</string>
+    <string name="btn_edit">Modificar</string>
     <string name="bienvenido">Bienvenido</string>
     <string name="titulo_registro">Registro de citas</string>
     <string name="titulo_rconsultas">Relación de citas</string>
+    <string name="titulo_detalle">Detalle de cita</string>
     <string name="hora_cita">Selecciona Hora</string>
     <string name="fecha_cita">Selecciona Fecha</string>
 </resources>

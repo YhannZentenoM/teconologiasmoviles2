@@ -2,9 +2,12 @@ package com.example.nomasfilas;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -63,9 +66,22 @@ public class Main3Activity_consultas extends AppCompatActivity {
 
             ArrayAdapter adaptador = new ArrayAdapter(this,android.R.layout.simple_list_item_1,listaInformacion);
             lv_citas.setAdapter(adaptador);
+
+            lv_citas.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    Intent intent = new Intent(Main3Activity_consultas.this, MainActivity_detalle.class);
+                    intent.putExtra("detalle", listaInformacion.get(position));
+                    intent.putExtra("data_consul", listaCitas.get(position).getConsultorio());
+                    intent.putExtra("data_fecha", listaCitas.get(position).getFecha());
+                    startActivity(intent);
+                }
+            });
         }else{
             Toast.makeText(this, "No existe el artículo", Toast.LENGTH_SHORT).show();
             BaseDeDatabase.close();
         }
     }
+
+
 }

@@ -1,5 +1,7 @@
 package com.example.nomasfilas;
 
+import java.io.Serializable;
+
 public class Citas {
 
     private Integer idusuario;
